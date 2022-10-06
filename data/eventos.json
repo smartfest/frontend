@@ -1,0 +1,24 @@
+[
+    {
+        "id":"",
+        "titulo": "Oktober Fest",
+        "fecha_evento": "",
+        "horario_inicio": "",
+        "descripcion": "",
+        "flyer": "",
+        "redes_sociales": [
+            {
+                "red": "",
+                "link": ""
+            },
+            {
+                "red": "",
+                "link": ""
+            }
+        ],
+        "tipo_evento": "cumple, casamiento, etc",
+        "ubicacion": "una direccion",
+        "id_user": "quien lo organiza",
+        
+    }
+]
