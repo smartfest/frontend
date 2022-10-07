@@ -1,9 +1,9 @@
-
 @import url('style.css');
-:root{
-    --border:25px;
+
+:root {
+    --border: 25px;
     --background-color: #D9D9D9;
-    --theme-color:#7F35A3;
+    --theme-color: #7F35A3;
 }
 
 * {
@@ -11,8 +11,9 @@
     margin: 0;
     font-family: Skranji-regular;
 }
-body{
-    background-color:var(--theme-color);
+
+body {
+    background-color: var(--theme-color);
 }
 
 nav {
@@ -22,21 +23,25 @@ nav {
     justify-content: end;
     margin-right: 10%;
 }
-nav input{
-    border:none;
+
+nav input {
+    font-size: 22px;
+    border: none;
     width: 30%;
     padding: 12px 20px;
     margin-right: 2%;
     border-radius: var(--border);
-    color:var(--primary-color);
+    color: var(--primary-color);
     background-color: var(--background-color);
 }
-nav button{
-    border:none;
+
+nav button {
+    border: none;
     border-radius: var(--border);
-    width:8%;
+    width: 8%;
 }
-nav button img{
+
+nav button img {
     height: 48px;
     width: 48px;
     padding: 2px;
@@ -56,33 +61,60 @@ nav button img{
 
 /* Panel de card*/
 
-.panel-card{    
+.panel-card {
     border-radius: var(--border);
-    margin:2%;
-    background-color:#d9d9d965;
+    margin: 2%;
+    background-color: #d9d9d965;
     padding: 5%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
 }
 
-card{
-    height: 20%;
+.card {
     width: 40%;
-    background-color: aqua;
-    border: none;
-    border-radius: 25px;
+    height: 30%;
+    border-radius: var(--border);
+    border: solid var(--primary-color) 2px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
 }
-card img{
-    border: none;
-    width: 300px;
-    height:300px;
+
+.image{
+    width: 100%;
+    height: 150px;
+    display: inline-block;
+    background-image: url("../../assets/photos/fiesta_pool.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-top-left-radius: var(--border);
+    border-top-right-radius: var(--border);
 }
 
 
+.card-content {
+    width: 100%;
+    height: 150px;
+    background-color: red;
+    border-bottom-left-radius: var(--border);
+    border-bottom-right-radius: var(--border);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+
+}
+div h2{
+    text-align: center;
+}
+div h3{
+    color:var(--secundary-color);
+    margin-top: 5%;
+    margin-left: 5%;
+}
 
 
 /*
     Footer
 */
 
-footer{
-    background-color:var(--primary-color)
+footer {
+    background-color: var(--primary-color)
 }
