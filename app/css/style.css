@@ -4,8 +4,6 @@ variables globales y fuentes
 :root {
     --primary-color: #252525;
     --secundary-color: #FFFFFF;
-    --background-color: #D9D9D9;
-
 }
 
 @font-face {
