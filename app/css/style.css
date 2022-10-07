@@ -2,8 +2,9 @@
 variables globales y fuentes
 */
 :root {
-    --main-color: #252525;
-    --text-color: #FFFFFF;
+    --primary-color: #252525;
+    --secundary-color: #FFFFFF;
+    --background-color: #D9D9D9;
 
 }
 

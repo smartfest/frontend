@@ -18,13 +18,19 @@ nav {
 nav input{
     width: 20%;
     padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
     margin-right: 2%;
+    border-radius: 25px;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+}
+nav button img{
+    height: 48px;
+    width: 48px;
+    padding: 2px;
 }
 
 .banner {
-    background-color: var(--main-color);
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-around;
     padding: 5%;
@@ -32,5 +38,5 @@ nav input{
 
 .banner h1 {
     font-size: 64px;
-    color: var(--text-color)
+    color: var(--secundary-color)
 }
