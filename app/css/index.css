@@ -1,0 +1,36 @@
+
+@import url('style.css');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Skranji-regular;
+}
+
+nav {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: end;
+    margin-right: 10%;
+}
+nav input{
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-right: 2%;
+}
+
+.banner {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+.banner h1 {
+    font-size: 64px;
+    color: var(--text-color)
+}

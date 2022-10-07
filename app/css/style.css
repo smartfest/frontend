@@ -1,0 +1,14 @@
+/*
+variables globales y fuentes
+*/
+:root {
+    --main-color: #252525;
+    --text-color: #FFFFFF;
+
+}
+
+@font-face {
+    font-family: "Skranji-regular";
+    src: url('../../assets/fonts/Skranji/Skranji-Regular.ttf');
+}
+
