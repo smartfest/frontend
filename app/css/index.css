@@ -83,6 +83,12 @@ nav button img {
     background:linear-gradient(#9D4242 ,#E3C3C3 30% ,transparent  );
 
 }
+.card:hover{
+    filter: brightness(1.2);
+    transform: scale(1.01);
+    border: solid var(--theme-color) 2px;
+    cursor: pointer;
+}
 
 .image{
     width: 100%;
