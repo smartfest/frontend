@@ -6,6 +6,8 @@
     --theme-color: #7F35A3;
 }
 
+
+
 * {
     padding: 0;
     margin: 0;
@@ -67,11 +69,13 @@ nav button img {
     background-color: #d9d9d965;
     padding: 5%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 .card {
-    width: 40%;
+    margin:10px;
+    width: 90%;
     height: 30%;
     border-radius: var(--border);
     border: solid var(--primary-color) 2px;
@@ -120,3 +124,12 @@ div h3{
 footer {
     background-color: var(--primary-color)
 }
+
+
+
+
+/*
+Animaciones :D
+
+*/
+
