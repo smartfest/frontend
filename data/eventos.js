@@ -1,4 +1,4 @@
-[
+const eventos=[
     {
         "id":"1",
         "titulo": "Oktober Fest",
@@ -99,7 +99,7 @@
         "tipo_evento": "Festival",
         "ubicacion": "Argentina,Neuquen,Alderete  1213",
         "id_user": "marley3400"
-        
     }
 
 ]
+module.exports =eventos;
