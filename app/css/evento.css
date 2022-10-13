@@ -1,9 +1,9 @@
 @import url(style.css);
 
+
 .flyer{
+    display: flex;
     justify-content: center;
-    width:100%;
+    width:800px;
     padding: 20%;
-    background-image: url('../../assets/photos/fiesta_club_night.jpeg');
-    background-repeat:no-repeat;
 }
