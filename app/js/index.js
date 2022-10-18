@@ -1,7 +1,4 @@
-
-const env = {
-    "data": "https://raw.githubusercontent.com/smartfest/frontend/main/data/eventos.json"
-}
+import {getEventos} from '../services/eventos-services.js'
 
 document.addEventListener("DOMContentLoaded", (event) => {
     var card = document.getElementById("panel");
@@ -10,9 +7,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 function create_panel(card) {
     let template = "";
-    fetch(env.data)
-        .then(respuesta => respuesta.json()) //Indicamos el formato en que se desea obtener la información
-        .then(eventos => {
+        getEventos().then(eventos => {
             eventos.forEach(element => {
                 template += create_template(element);
             });
