@@ -1,5 +1,4 @@
-const eventos=[
-    {
+[    {
         "id":"1",
         "titulo": "Oktober Fest",
         "fecha_evento": "12/09/2022",
@@ -102,4 +101,3 @@ const eventos=[
     }
 
 ]
-module.exports =eventos;

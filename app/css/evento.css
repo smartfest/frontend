@@ -1,9 +1,32 @@
 @import url(style.css);
-
+:root{
+    --color:#b5e016;
+}
+body{
+    display: grid;
+    grid-column: 1;
+    justify-content: center;
+}
 
 .flyer{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     width:800px;
-    padding: 20%;
+}
+.redes-sociales{
+    display: flex;
+    justify-content:space-around;
+    background-color: brown;
+    width: 400px;
+    height: 70px;
+    border-radius: 20px;
+}
+.informacion{
+    display: flex;
+    justify-content: space-between;
+}
+h5{
+    width: 50%;
+}
+html{
+    background-color: var(--color)
 }
