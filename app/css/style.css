@@ -5,9 +5,27 @@ variables globales y fuentes
     --primary-color: #252525;
     --secundary-color: #FFFFFF;
 }
+*{
+    padding: 0;
+    margin: 0;
+}
+
+hr{
+    margin-top: 2%;
+}
+footer{
+    padding: 5%;
+    color:blanchedalmond;
+    font-size:22px;
+    background-color: var(--primary-color);
+}
 
 @font-face {
     font-family: "Skranji-regular";
     src: url('../../assets/fonts/Skranji/Skranji-Regular.ttf');
+}
+@font-face {
+    font-family:Kingdom ;
+    src: url('../../assets/fonts/Flowers\ Kingdom.ttf');
 }
 

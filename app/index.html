@@ -10,25 +10,34 @@
     <!--links-->
     <link rel="stylesheet" href="../app/css/index.css">
 </head>
+<script>
+    function go(id) {
+        window.location.href = "pages/evento.html?id=" + id;
+    }
+</script>
 
 <body>
     <nav>
         <input type="text" name="buscar..." id="" placeholder="Buscar..">
         <button>
-            <img src='../assets/logo.svg' alt="inicio de sesion">
+            <img src="../assets/icons/user.svg" alt="inicio de sesion">
         </button>
     </nav>
 
     <div class="banner">
-        <img src="../assets/logo.svg" alt="logo smart fest" width="350px" height="350px">
-        <h1>Tu fiesta, en un lugar</h1>
+        <img src="../assets/icons/Facebook.svg" alt="logo smart fest" width="300px" height="300px">
+        <h1>Tu fiesta, en un lugar
+            <div class="login">Registrate</div>
+        </h1>
+        
     </div>
 
     <div class="panel-card" id="panel"></div>
     <script type="module" src="../app/js/index.js"></script>
 </body>
+<hr>
 <footer>
-    Laboratorio de programacion 2022
+    Laboratorio de programacion año 2022
 </footer>
 
 </html>
