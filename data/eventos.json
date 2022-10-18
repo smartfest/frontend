@@ -50,7 +50,7 @@
         "id_user": "Carlos123"
         
     },   {
-        "id":"2",
+        "id":"3",
         "titulo": "Pool party",
         "fecha_evento": "12/12/2022",
         "horario_inicio": "15:30",
@@ -75,7 +75,7 @@
         "id_user": "juan23"
         
     },  {
-        "id":"2",
+        "id":"4",
         "titulo": "Bassed Festival",
         "fecha_evento": "12/12/2022",
         "horario_inicio": "20:15",

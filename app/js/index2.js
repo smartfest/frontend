@@ -1,4 +1,6 @@
 
+
+
 document.addEventListener("DOMContentLoaded", (event) => {
     var card = document.getElementById("panel"); 
     create_panel(card)
@@ -9,9 +11,9 @@ function go() {
     window.location.href("pages/evento.html")
 }
 
-function create_panel(card) {
+ function create_panel(card) {
     template = "";
-    fetch('../data/eventos.json')
+    fetch(env.data)
     .then(respuesta => respuesta.json()) //Indicamos el formato en que se desea obtener la información
     .then(eventos => {
         eventos.forEach(element => {
