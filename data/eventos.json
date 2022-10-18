@@ -1,5 +1,4 @@
-[
-    {
+[    {
         "id":"1",
         "titulo": "Oktober Fest",
         "fecha_evento": "12/09/2022",
@@ -51,7 +50,7 @@
         "id_user": "Carlos123"
         
     },   {
-        "id":"2",
+        "id":"3",
         "titulo": "Pool party",
         "fecha_evento": "12/12/2022",
         "horario_inicio": "15:30",
@@ -76,7 +75,7 @@
         "id_user": "juan23"
         
     },  {
-        "id":"2",
+        "id":"4",
         "titulo": "Bassed Festival",
         "fecha_evento": "12/12/2022",
         "horario_inicio": "20:15",
@@ -99,7 +98,6 @@
         "tipo_evento": "Festival",
         "ubicacion": "Argentina,Neuquen,Alderete  1213",
         "id_user": "marley3400"
-        
     }
 
 ]
