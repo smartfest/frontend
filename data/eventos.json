@@ -30,7 +30,7 @@
         "fecha_evento": "19/10/2022",
         "horario_inicio": "22:30",
         "descripcion": "Fiesta retro , con la mejor musica",
-        "flyer": "../assets/photos/fiesta_club-night.jpg",
+        "flyer": "../assets/photos/fiesta_club_night.jpeg",
         "redes_sociales": [
             {
                 "red": "Instragram",
