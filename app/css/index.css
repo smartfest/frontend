@@ -14,9 +14,7 @@
     font-family: Skranji-regular;
 }
 
-body {
-    background-color: var(--theme-color);
-}
+
 
 .banner {
     display: flex;

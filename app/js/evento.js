@@ -25,17 +25,17 @@ function createEvent(id) {
 }
 
 function template(data) {
-    return `<h1 class="titulo">${data.titulo}fest</h1>
+    return `<h1 class="titulo">${data.titulo}fest</h1><br>
   <img class="flyer" src="${"../" + data.flyer}" alt="Evento "${data.descripcion}>
   <div class="informacion">
   <div>
     <h5>Ubicacion: ${data.ubicacion}</h5>
     <h5>Horario :${data.horario_inicio}</h5>
-  </div>
-    <div class="redes-sociales">
-          <img src="../../assets/icons/Facebook.svg" alt="">
+    <h5>Fecha :${data.fecha_evento} a las ${data.horario_inicio} </h5>
+    <img src="../../assets/icons/Facebook.svg" alt="">
           <img src="../../assets/icons/Instagram.svg" alt="">
           <img src="../../assets/icons/Twitter.svg" alt="">
-    </div>
+  </div>
+    
     </div>`
 }

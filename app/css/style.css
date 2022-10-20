@@ -28,7 +28,9 @@ hr{
     font-family:Kingdom ;
     src: url('../../assets/fonts/Flowers\ Kingdom.ttf');
 }
-
+body {
+  background-color: var(--theme-color);
+}
 .columns {
     display: flex;
     flex-direction: row;
