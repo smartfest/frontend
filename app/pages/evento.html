@@ -5,15 +5,134 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/evento.css">
-    <title></title>
+     <!-- CSS only -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">   
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+   <link rel="stylesheet" href="../css/evento.css">
+    <title>SmartFest</title>
 </head>
 <body>
+
+    <div class="columns">
+        <div class="column_logo padd_left">
+            <a href="http://google.com.ar/">
+                <img width="189" height="87" src="../../assets/logo.png" alt="" class="img_logo" >								
+            </a>
+        </div>
+        <div class="column_menu justify-content-end padd_right">   
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-body">
+                <div class="container-fluid">
+                  
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                      </li>
+                      
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Categorías
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Casamiento</a></li>
+                          <li><a class="dropdown-item" href="#">15 años</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Electrónica</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Iniciar Sesión</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Mi Panel</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="...buscar fiesta" aria-label="Buscar">
+                      <button class="btn btn-outline-secondary " type="submit">Buscar</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+
+
+            
+       </div>
+       
+     </div>
+
+
     <div class="conteiner" id=evento>
     </div>
     <script type="module" src="../js/evento.js"></script>
 </body>
 <hr>
-<footer>
-    Laboratorio de programacion año 2022
-</footer>
+<footer id="footer"> 
+    <div class="footer-newsletter"> 
+         <div class="container"> 
+            <div class="row"> 
+                <div class="col-lg-6"> 
+                      <h4>Nuestro boletin</h4> 
+                     <p>Si estás interesado en recibir nuestras novedades, no dejes de suscribirte a nuestro boletín. </p> 
+                 </div> 
+                 <div class="col-lg-6"> 
+                   <form action="" method="post"> 
+                      <input type="email" name="email">
+                      <input type="submit" value="Suscribete"> 
+                   </form> 
+                 </div> 
+               </div> 
+             </div> 
+           </div> 
+         <div class="footer-top"> 
+           <div class="container"> 
+             <div class="row"> 
+               <div class="col-lg-3 col-md-6 footer-links"> 
+                 <h4>Links Utiles</h4> 
+                   <ul> 
+                       <li><i class="bx bx-chevron-right"></i> 
+                           <a href="#">Inicio</a>
+                       </li> 
+                       <li><i class="bx bx-chevron-right"></i> 
+                         <a href="#">Acerca de nosotros</a></li> 
+                       <li><i class="bx bx-chevron-right"></i> 
+                         <a href="#">Politicas de privacidad</a></li> 
+                   </ul> 
+               </div> 
+             <div class="col-lg-3 col-md-6 footer-links"> 
+               <h4>Nuestros Servicios</h4> 
+                 <ul> 
+                   <li><i class="bx bx-chevron-right"></i> 
+                     <a href="#">Capacitaciones</a></li> 
+                   <li><i class="bx bx-chevron-right"></i> 
+                     <a href="#">Accesoramiento</a></li> 
+                 </ul> 
+             </div> 
+             <div class="col-lg-3 col-md-6 footer-contact"> 
+               <h4>Contáctanos</h4> 
+               <p> República de Italia xxxx <br> Neuquén cap, 8300<br> Provincia de Neuquén <br><br>
+                 <strong>Teléfono:</strong> +54 9 299 xxx xxx<br> 
+                 <strong>Email:</strong> smartfest@pepito.com<br> 
+               </p> 
+             </div> 
+             <div class="col-lg-3 col-md-6 footer-info"> 
+               <h3>Sobre nosotros</h3> 
+               <p>El presente trabajo es parte de la práctica de la materia Laboratorio de Programación, carrera Lic. en Ciencias de la Computación.
+ 
+               </p> 
+             </div> 
+           </div> 
+         </div> 
+       </div> 
+       <div class="container"> 
+         <div class="copyright"> &copy; Copyright <strong><span>SmartFest</span></strong>. Todos los derechos reservados </div> 
+         <div class="credits"> Designed by <a href="#">Luis Garcia y Dante Giuliano 2022</a> </div> 
+       </div>
+ </footer>
+ 
 </html>

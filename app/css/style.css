@@ -13,12 +13,12 @@ variables globales y fuentes
 hr{
     margin-top: 2%;
 }
-footer{
+/*footer{
     padding: 5%;
     color:blanchedalmond;
     font-size:22px;
     background-color: var(--primary-color);
-}
+}*/
 
 @font-face {
     font-family: "Skranji-regular";
@@ -29,3 +29,44 @@ footer{
     src: url('../../assets/fonts/Flowers\ Kingdom.ttf');
 }
 
+.columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #ffffffff;    
+    align-items: center;
+  }
+  
+  .column_menu {
+    flex: 66.66%;
+  }
+  .column_logo {
+    flex: 33.33%;
+  }
+  /* Parte responsive de columns para el header*/
+  @media (max-width: 1100px) {
+    .column_menu ,.column_logo {
+      flex: 100%;
+    }
+  }
+  .padd_left  {
+    padding-left: 2%;
+  }
+  .padd_right  {
+    padding-right: 2%;
+  }
+
+  .img_logo {    
+    height: 60px;    
+  }
+
+.link_header{
+    color: #4c4c4c !important;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+#footer{background: #404040;padding: 0 0 30px 0;color: #fff;font-size: 14px}#footer .footer-newsletter{padding: 50px 0;background: #404040}#footer .footer-newsletter h4{font-size: 24px;margin: 0 0 20px 0;padding: 0;line-height: 1;font-weight: 600}#footer .footer-newsletter form{margin-top: 30px;background: #fff;padding: 6px 10px;position: relative;border-radius: 50px}#footer .footer-newsletter form input[type="email"]{border: 0;padding: 8px;width: calc(100% - 140px)}#footer .footer-newsletter form input[type="submit"]{position: absolute;top: 0;right: 0;bottom: 0;border: 0;background: none;font-size: 16px;padding: 0 30px;margin: 3px;background: #e96b56;color: #fff;transition: 0.3s;border-radius: 50px}#footer .footer-newsletter form input[type="submit"]:hover{background: #e6573f}#footer .footer-top{background: #3b3b3b;border-top: 1px solid #474747;border-bottom: 1px solid #474747;padding: 60px 0 30px 0}#footer .footer-top .footer-info{margin-bottom: 30px}#footer .footer-top .footer-info h3{font-size: 18px;margin: 0 0 20px 0;padding: 2px 0 2px 0;line-height: 1;font-weight: 700}#footer .footer-top .footer-info p{font-size: 14px;line-height: 24px;margin-bottom: 0;font-family: "Raleway", sans-serif;color: #fff}#footer .footer-top .social-links a{font-size: 18px;display: inline-block;background: #545454;color: #fff;line-height: 1;padding: 8px 0;margin-right: 4px;border-radius: 50%;text-align: center;width: 36px;height: 36px;transition: 0.3s}#footer .footer-top .social-links a:hover{background: #e96b56;color: #fff;text-decoration: none}#footer .footer-top h4{font-size: 16px;font-weight: bold;color: #fff;text-transform: uppercase;position: relative;padding-bottom: 12px}#footer .footer-top .footer-links{margin-bottom: 30px}#footer .footer-top .footer-links ul{list-style: none;padding: 0;margin: 0}#footer .footer-top .footer-links ul i{padding-right: 2px;color: #ec7f6d;font-size: 18px;line-height: 1}#footer .footer-top .footer-links ul li{padding: 10px 0;display: flex;align-items: center}#footer .footer-top .footer-links ul li:first-child{padding-top: 0}#footer .footer-top .footer-links ul a{color: #fff;transition: 0.3s;display: inline-block;line-height: 1}#footer .footer-top .footer-links ul a:hover{color: #e96b56}#footer .footer-top .footer-contact{margin-bottom: 30px}#footer .footer-top .footer-contact p{line-height: 26px}#footer .copyright{text-align: center;padding-top: 30px}#footer .credits{padding-top: 10px;text-align: center;font-size: 13px;color: #fff}

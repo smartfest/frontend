@@ -18,37 +18,6 @@ body {
     background-color: var(--theme-color);
 }
 
-nav {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: end;
-    margin-right: 10%;
-}
-
-nav input {
-    font-size: 22px;
-    border: none;
-    width: 30%;
-    padding: 12px 20px;
-    margin-right: 2%;
-    border-radius: var(--border);
-    color: var(--primary-color);
-    background-color: var(--background-color);
-}
-
-nav button {
-    border: none;
-    border-radius: var(--border);
-    width: 8%;
-}
-
-nav button img {
-    height: 48px;
-    width: 48px;
-    padding: 2px;
-}
-
 .banner {
     display: flex;
     flex-wrap: wrap;
@@ -56,6 +25,8 @@ nav button img {
     display: flex;
     justify-content: space-around;
     padding: 5%;
+    background-image: url("../../assets/photos/dj.jpg");
+    height: 500px;
 }
 
 .banner h1 {
@@ -143,4 +114,5 @@ div h3{
     letter-spacing: 10px;
     scale:.4
 }
+
 
