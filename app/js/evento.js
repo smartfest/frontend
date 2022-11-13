@@ -21,7 +21,6 @@ function createEvent(id) {
     let evento = document.getElementById("evento");
     evento.innerHTML = template(data)
 
-
 }
 
 function template(data) {
