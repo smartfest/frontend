@@ -1,11 +1,15 @@
-import { getEventos, getEventoById } from '../services/eventos-services.js'
+import { getEventos, getEventoById,crearEvento,status } from '../services/eventos-services.js'
 import { event_table } from '../components/event_table.js'
 
 
 var input_event;
 var form_data;
 document.addEventListener("DOMContentLoaded", () => {
-
+  let estado = document.getElementById("admin")
+  status().then(e=>{
+    console.log(e)
+    estado.innerHTML=e;
+  })
   const form = document.getElementById("form");
   form_data = new FormData(form)
 
@@ -30,9 +34,12 @@ window.create_event = function (id_evento) {
   input_event.fecha_fin.value = ""
 
 }
+window.delete_event=function (id_evento){
+  let event = document.getElementById("evento-"+id_evento);
+  event.innerHTML=" "
+}
 
 window.save_event = function () {
-
 
   const form = document.getElementById("form");
   form_data = new FormData(form)
@@ -44,7 +51,8 @@ window.save_event = function () {
     fecha_inicio: form_data.get("fecha_inicio"),
     fecha_fin: form_data.get("fecha_fin")
   }
-  console.log(evento)
+  console.log(evento,"---",form_data)
+  crearEvento(evento)
 
 }
 
@@ -55,7 +63,6 @@ window.edit_event = function (id_evento) {
     input_event.ubicacion.value = e.ubicacion
     input_event.titulo.value = e.titulo;
     input_event.fecha_inicio.value= e.fecha_evento
-    console.log(e)
   })
 
   //input_event.flyer.value=          event.flyer

@@ -1,33 +1,40 @@
 
 const env = {
-    "URL": "https://raw.githubusercontent.com/smartfest/frontend/main/data/eventos.json"
+    "URL": "https://raw.githubusercontent.com/smartfest/frontend/developer/data/eventos.json",
+    "API": 'http://127.0.0.1:3003/api'
 }
-
-
+var axios = axi.create({
+    baseURL:env.API,
+    timeout: 1000,
+  });
 
 async function getEventos() {
-    var err = {
-        "err": "No se encontro el archivo json"
-    }
-    var data = fetch(env.URL)
-        .then(respuesta => respuesta.json()) //Indicamos el formato en que se desea obtener la información
+    return await fetch(env.URL, { method: "GET" })
         .then(respuesta => {
-            return Promise.resolve(respuesta);
+            console.log(respuesta)
+            return Promise.resolve(respuesta.json());
         }).catch(() => {
-            return Promise.reject(err);
+            return Promise.reject("No se encontraron eventos");
         });
-    return await data
 }
+
+async function status() {
+    axios({
+        method: 'get',
+        url: env.API,
+      }).then((data)=>{console.log(data)})
+}
+
 
 function crearEvento(evento) {
-/**
-    Logica de crear
+    fetch(env.API + '/evento', { method: "POST", mode: "no-cors", body: { mode: "formdata", formdata: JSON.stringify(evento) } })
+        .then(res => { console.log("Consulta POST Exitosa", res) })
+        .catch(exp => { console.log("Consuslta POST Rechazada", exp) })
 
-*/
 }
- async function getEventoById(id_evento) {
+async function getEventoById(id_evento) {
     var data = fetch(env.URL)
-        .then(respuesta => respuesta.json()) //Indicamos el formato en que se desea obtener la información
+        .then(respuesta => respuesta.json())
         .then(respuesta => {
             return Promise.resolve(respuesta.filter((evento) => { return id_evento === evento.id })[0]);
         }).catch(() => {
@@ -36,4 +43,4 @@ function crearEvento(evento) {
     return await data
 }
 
-export { getEventos, getEventoById }
+export { getEventos, getEventoById, crearEvento, status }
