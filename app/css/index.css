@@ -3,58 +3,28 @@
 :root {
     --border: 25px;
     --background-color: #D9D9D9;
-    --theme-color: #7F35A3;
+    --theme-color: #2a89a1;
     --cardWidth: 240px;
     --cardHeight: 280px;
     --cardMargin: 16px;
 }
 
 * {
-    padding: 0;
-    margin: 0;
+    letter-spacing: 1px;
     font-family: Skranji-regular;
 }
 
-body {
-    background-color: var(--theme-color);
-}
 
-nav {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: end;
-    margin-right: 10%;
-}
-
-nav input {
-    font-size: 22px;
-    border: none;
-    width: 30%;
-    padding: 12px 20px;
-    margin-right: 2%;
-    border-radius: var(--border);
-    color: var(--primary-color);
-    background-color: var(--background-color);
-}
-
-nav button {
-    border: none;
-    border-radius: var(--border);
-    width: 8%;
-}
-
-nav button img {
-    height: 48px;
-    width: 48px;
-    padding: 2px;
-}
 
 .banner {
+    display: flex;
+    flex-wrap: wrap;
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-around;
     padding: 5%;
+    background-image: url("../../assets/photos/dj.jpg");
+    height: 500px;
 }
 
 .banner h1 {
@@ -69,11 +39,10 @@ nav button img {
     background-color: #d9d9d965;
     padding: 5%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-
     display: flex;    
     justify-content: flex-start;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;/*cards colocados en varias lineas*/
+    gap:3em; /*espacio entre fias y columnas dentro del flex*/
   }
 
 .card {
@@ -88,6 +57,7 @@ nav button img {
   }
 .card:hover{
     filter: brightness(1.2);
+    transition: .5s;
     transform: scale(1.01);
     border: solid var(--theme-color) 2px;
     cursor: pointer;
@@ -107,15 +77,12 @@ nav button img {
 
 }
 
-
 .card-content {
-    width: 100%;
+    width: 300px;
     height: 150px;
     border-bottom-left-radius: var(--border);
     border-bottom-right-radius: var(--border);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-
-
 }
 div h2{
     text-align: center;
@@ -126,14 +93,24 @@ div h3{
     margin-left: 5%;
 }
 
-/*
-    Footer
-*/
+.login{
+    margin:2px;
+    text-align: center;
+    font-size: 22px;
+    width: 100%;
+    height: 50px;
+    letter-spacing: 2px;
+}
+.login:hover{
+    transition: .5s;
+    letter-spacing: 2px;
+    scale:1.2
+}
+.login:hover:after{
+    transition-delay:2s;
+    transition: .5s;
+    letter-spacing: 10px;
+    scale:.4
+}
 
-footer {
-    background-color: var(--primary-color)
-}
-.link-div {
-    color: black;
-    text-decoration: none;
-}
+
