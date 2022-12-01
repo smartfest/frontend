@@ -15,13 +15,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
 function createEvent(id) {
-
-    let data = eventos.filter(evento => { return evento.id == id })[0];
-   //console.log(data)
+    let data = eventos.filter(evento => { return evento.id == id })[0];   
     let evento = document.getElementById("evento");
     evento.innerHTML = template(data)
-
-
 }
 
 function template(data) {
